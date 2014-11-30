@@ -25,7 +25,7 @@ On my i7-2600K PC with SSD storage, running Ubuntu 14.04.
 
 |Programming Language | Versions & Options | Time Cost |
 | ------- | ------- | ------- |
-|Clojure| v1.6.0, openjdk-7u71-2.5.3 |about 300 ms |
-|Julialang| v0.3.3 |about 200 ms |
-|Golang | v1.3.3 |about 60 ms |
-|C | gcc v4.8.2, openmpi v1.6.5, `-O3` | about 30 ms |
+|Clojure| v1.6.0, openjdk-7u71-2.5.3 | 210~250 ms |
+|Julialang| v0.3.3, exclude the GC time | 210~230 ms |
+|Golang | v1.3.3 | 50~70 ms |
+|C | gcc v4.8.2, openmpi v1.6.5, `-O3` | 25~35 ms |
