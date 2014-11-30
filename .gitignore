@@ -1,11 +1,11 @@
-*/target
-*/classes
-*/checkouts
+clojure/wordpairs/target
+clojure/wordpairs/classes
+clojure/wordpairs/checkouts
 pom.xml
 pom.xml.asc
 *.jar
 *.class
 *.ex
-*/.lein-*
-*/.nrepl-port
+clojure/wordpairs/.lein-*
+clojure/wordpairs/.nrepl-port
 *.swp
