@@ -53,22 +53,12 @@ function wpreduce(wp,keyword)
     return count
 end
 
-println("... Process \"word-paris.txt\" ", int(ARGS[1]), " Times ...")
+println("... Process \"wordparis.txt\" ", int(ARGS[1]), " Times ...")
 
 for i = 1:int(ARGS[1])
     
-    # wait for sevaral seconds, take easy.:) Hardisk I/O
-    y = 0
-    for i = 1:10^8
-        ret = i
-        ret = i + 2
-        ret = i + 1
-        y += ret
-    end
     print( "... [Map] time performance :\t")
-    @time begin
-        result = processdata("word-pairs.txt")
-    end
+    @time result = processdata("wordpairs.txt")
     print( "... [Reduce] time performance :\t")
     @time wpcount = wpreduce(result,"her")
     println( "...... pairs of [\"her\"] = ", wpcount  )

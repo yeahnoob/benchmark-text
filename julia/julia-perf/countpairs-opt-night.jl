@@ -12,7 +12,7 @@ function processdata!(filename::String, idx::Dict{String, Array})
     lastone = 0
     prekey = ""
     for item in lines
-        key = split(strip(item), ','; limit=2)
+        key = split(strip(item), ' '; limit=2)
         if key[1] == prekey
             lastone += 1
         else
@@ -27,21 +27,11 @@ end
 
 function bench(loops::Int64, filename::String, keyword::String)
     global_idx = Dict{String, Array}()
-    #println("... Processing ", filename, " ", loops, " Times ...")
     for i = 1:loops
-        #= wait for sevaral seconds, take easy.:) Hardisk I/O
-        y = 0
-        for i = 1:10^8
-            ret = i
-            ret = i + 2
-            ret = i + 1
-            y += ret
-        end
-        =#
         @time processdata!(filename, global_idx)
-        println( "...... pairs of [\"", keyword, "\"] = ", global_idx["her"]  )
+        println( "...... pairs of [", keyword, "] = ", global_idx[keyword]  )
     end
 end
 
-bench(int(ARGS[1]), "word-pairs.txt", "her")
+bench(int(ARGS[1]), "wordpairs.txt", "her")
 None 
