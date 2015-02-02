@@ -1665,8 +1665,9 @@ enough to
 to get
 get you
 you to
-to it!--joe
-it!--joe halloa
+to it
+it joe
+joe halloa
 halloa the
 the guard
 guard replied
@@ -7670,8 +7671,8 @@ him and
 and all
 all quite
 quite in
-in vain;--then
-vain;--then the
+in vain
+then the
 the history
 history of
 of your
@@ -12316,10 +12317,11 @@ and not
 not only
 only possible
 possible but
-but done--done
-done--done see
-see you!--under
-you!--under that
+but done
+done see
+see you
+you under
+under that
 that sky
 sky there
 there every
@@ -16975,8 +16977,9 @@ them down
 down and
 and handed
 handed them
-them in;--and
-in;--and immediately
+them in
+in and
+and immediately
 immediately afterwards
 afterwards leaned
 leaned against
@@ -25637,8 +25640,9 @@ and young
 young lady
 lady so
 so thrown
-thrown together;--with
-together;--with the
+thrown together
+together with
+with the
 the exception
 exception of
 of that
@@ -28011,8 +28015,9 @@ to it
 it lord
 lord love
 love you
-you no!--i
-no!--i shouldn't
+you no
+no i
+i shouldn't
 shouldn't said
 said mr
 mr carton
@@ -36174,15 +36179,16 @@ is for
 for all
 all countries
 countries similarly
-similarly favoured!--always
-favoured!--always was
+similarly favoured
+favoured always
+always was
 was for
 for england
-england (by
-(by way
+england by
+by way
 way of
-of example)
-example) in
+of example
+example in
 in the
 the regretted
 regretted days
@@ -43823,8 +43829,9 @@ my nephew
 nephew to
 to his
 his chamber
-chamber there!--and
-there!--and burn
+chamber there
+there and
+and burn
 burn monsieur
 monsieur my
 my nephew
@@ -93531,8 +93538,8 @@ was red
 red in
 in their
 their frenzied
-frenzied eyes;--eyes
-eyes;--eyes which
+frenzied eyes
+eyes which
 which any
 any unbrutalised
 unbrutalised beholder
@@ -98126,8 +98133,9 @@ thirst liberty
 liberty equality
 equality fraternity
 fraternity or
-or death;--the
-death;--the last
+or death
+death the
+the last
 last much
 much the
 the easiest
@@ -103968,8 +103976,9 @@ used to
 to say
 say now
 now mr
-mr cruncher!--don't
-cruncher!--don't you
+mr cruncher
+cruncher don't
+don't you
 you move
 move ladybird
 ladybird they
@@ -109005,8 +109014,9 @@ gentleman and
 and look
 look here
 here once
-once more!"--mr
-more!"--mr cruncher
+once more
+more mr
+mr cruncher
 cruncher could
 could not
 not be
@@ -111277,11 +111287,11 @@ of my
 my pretty
 pretty young
 young mother
-mother (and
-(and i
+mother and
+and i
 i so
-so old!)
-old!) and
+so old
+old and
 and by
 by many
 many associations
@@ -119122,8 +119132,9 @@ heart my
 my fair
 fair young
 young english
-english wife!--we
-wife!--we saw
+english wife
+wife we
+we saw
 saw the
 the man
 man who
@@ -121028,8 +121039,9 @@ life or
 or any
 any man's
 man's to
-to them!--i
-them!--i doubt
+to them
+them i
+i doubt
 doubt if
 if they
 they durst
@@ -123312,11 +123324,11 @@ opened it
 it and
 and exclaimed
 exclaimed thank
-thank _god!_
-_god!_ what
+thank god
+god what
 what is
-is it?
-it? asked
+is it
+it asked
 asked mr
 mr lorry
 lorry eagerly
@@ -134467,8 +134479,9 @@ guillotine are
 are robed
 robed and
 and ready
-ready crash!--a
-crash!--a head
+ready crash
+crash a
+a head
 head is
 is held
 held up
@@ -134506,8 +134519,9 @@ on the
 the third
 third comes
 comes up
-up crash!--and
-crash!--and the
+up crash
+crash and
+and the
 the knitting-women
 knitting-women never
 never faltering
@@ -135681,9 +135695,9 @@ these works
 works so
 so the
 the foundation
-foundation (and
-(and you!)
-you!) can
+foundation and
+and you
+you can
 can copy
 copy and
 and distribute
@@ -136915,8 +136929,7 @@ gutenberg-tm electronic
 electronic works
 works provided
 provided that
-that 
- you
+that you
 you pay
 pay a
 a royalty
@@ -137036,8 +137049,7 @@ project gutenberg
 gutenberg literary
 literary archive
 archive foundation
-foundation 
- you
+foundation you
 you provide
 provide a
 a full
@@ -137111,8 +137123,7 @@ copies of
 of project
 project gutenberg-tm
 gutenberg-tm works
-works 
- you
+works you
 you provide
 provide in
 in accordance
@@ -137154,8 +137165,7 @@ of receipt
 receipt of
 of the
 the work
-work 
- you
+work you
 you comply
 comply with
 with all
@@ -137330,8 +137340,7 @@ limited warranty
 warranty disclaimer
 disclaimer of
 of damages
-damages 
- except
+damages except
 except for
 for the
 the right
@@ -137453,8 +137462,7 @@ right of
 of replacement
 replacement or
 or refund
-refund 
- if
+refund if
 if you
 you discover
 discover a
@@ -137712,8 +137720,7 @@ the remaining
 remaining provisions
 provisions 1.f.6
 1.f.6 indemnity
-indemnity 
- you
+indemnity you
 you agree
 agree to
 to indemnify
