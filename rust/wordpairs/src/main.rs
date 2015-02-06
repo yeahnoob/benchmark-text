@@ -3,11 +3,15 @@
 #![feature(os)]
 #![feature(core)]
 
+//! Store a file into a HashMap of Vector.
+//! Benchmark the language implemetation's I/O, Hash and Map performance.
+
 use std::old_io::BufferedReader;
 use std::old_io::File;
 use std::collections::HashMap;
 use std::os;
 
+/// store word pairs into the HashMap of Vector `textpairs`.
 fn main() {
     let arguments: Vec<String> = os::args(); 
     println!("reading the file: \"{}\"", arguments[1]);
@@ -19,7 +23,6 @@ fn main() {
     // let mut last_firstword: String = "".to_string();
     // let mut last_lastword: String = "".to_string();
 
-    // store the file into a HashMap of Vector `textpairs`.
     let mut textpairs: HashMap<&str, Vec<&str>> = HashMap::new();
     for line in alllines.iter() {
         let twowords: Vec<&str> = line.words().collect();
