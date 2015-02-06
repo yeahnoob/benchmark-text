@@ -2,6 +2,7 @@
 #![feature(io)]
 #![feature(os)]
 #![feature(core)]
+#![feature(env)]
 
 //! Store a file into a HashMap of Vector.
 //! Benchmark the language implemetation's I/O, Hash and Map performance.
@@ -9,11 +10,11 @@
 use std::old_io::BufferedReader;
 use std::old_io::File;
 use std::collections::HashMap;
-use std::os;
+use std::env;
 
 /// store word pairs into the HashMap of Vector `textpairs`.
 fn main() {
-    let arguments: Vec<String> = os::args(); 
+    let arguments: Vec<String> = env::args().map(|x| x.into_string().unwrap()).collect();
     println!("reading the file: \"{}\"", arguments[1]);
     let path = Path::new(&*arguments[1]);
     let mut file = BufferedReader::new(File::open(&path));
@@ -22,6 +23,7 @@ fn main() {
     // if debug {
     // let mut last_firstword: String = "".to_string();
     // let mut last_lastword: String = "".to_string();
+    // }
 
     let mut textpairs: HashMap<&str, Vec<&str>> = HashMap::new();
     for line in alllines.iter() {
@@ -38,10 +40,11 @@ fn main() {
 
         let firstword = twowords[0];
         let lastword = twowords[1];
-        
+
         // if debug {
         // last_firstword = firstword.to_string();
         // last_lastword = lastword.to_string();
+        // }
 
         if !textpairs.contains_key(&firstword) {
             textpairs.insert(&firstword, Vec::new());
