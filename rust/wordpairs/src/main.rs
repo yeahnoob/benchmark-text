@@ -1,8 +1,6 @@
-#![feature(path)]
-#![feature(io)]
-#![feature(os)]
-#![feature(core)]
-#![feature(env)]
+#![feature(old_path)]
+#![feature(old_io)]
+#![feature(str_words)]
 
 //! Store a file into a HashMap of Vector.
 //! Benchmark the language implemetation's I/O, Hash and Map performance.
@@ -14,7 +12,7 @@ use std::env;
 
 /// store word pairs into the HashMap of Vector `textpairs`.
 fn main() {
-    let arguments: Vec<String> = env::args().map(|x| x.into_string().unwrap()).collect();
+    let arguments: Vec<String> = env::args().map(|x| x.to_string()).collect();
     println!("reading the file: \"{}\"", arguments[1]);
     let path = Path::new(&*arguments[1]);
     let mut file = BufferedReader::new(File::open(&path));
