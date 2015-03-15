@@ -1,31 +1,31 @@
-#![feature(old_path)]
-#![feature(old_io)]
 #![feature(str_words)]
 
 //! Store a file into a HashMap of Vector.
 //! Benchmark the language implemetation's I/O, Hash and Map performance.
 
-use std::old_io::BufferedReader;
-use std::old_io::File;
+use std::io::BufReader;
+use std::io::BufRead;
+use std::fs::File;
 use std::collections::HashMap;
 use std::env;
+use std::str::StrExt;
 
 /// store word pairs into the HashMap of Vector `textpairs`.
 fn main() {
     let arguments: Vec<String> = env::args().map(|x| x.to_string()).collect();
     println!("reading the file: \"{}\"", arguments[1]);
-    let path = Path::new(&*arguments[1]);
-    let mut file = BufferedReader::new(File::open(&path));
-    let alllines: Vec<String> = file.lines().map(|x| x.unwrap()).collect();
+    let file = match File::open(&arguments[1]) {
+        Ok(file) => file,
+        Err(..) => panic!("Cannot find the File with the given filename"),
+    };
+    let reader= BufReader::new(&file);
+    let alllines: Vec<String> = reader.lines().map(|x| x.ok().unwrap()).collect();
 
-    // if debug {
-    // let mut last_firstword: String = "".to_string();
-    // let mut last_lastword: String = "".to_string();
-    // }
-
-    let mut textpairs: HashMap<&str, Vec<&str>> = HashMap::new();
+    let mut textpairs: HashMap< &str, Vec<&str> > = HashMap::new();
     for line in alllines.iter() {
         let twowords: Vec<&str> = line.words().collect();
+        let fw = twowords[0];
+        let lw = twowords[1];
 
         /*
         if twowords.len() < 2 {
@@ -36,20 +36,12 @@ fn main() {
         }
         */
 
-        let firstword = twowords[0];
-        let lastword = twowords[1];
-
-        // if debug {
-        // last_firstword = firstword.to_string();
-        // last_lastword = lastword.to_string();
-        // }
-
-        if !textpairs.contains_key(&firstword) {
-            textpairs.insert(&firstword, Vec::new());
+        if !textpairs.contains_key(&fw) {
+            textpairs.insert(fw, Vec::new());
         } else {
-            textpairs.get_mut(&firstword).unwrap().push(&lastword);
+            textpairs.get_mut(&fw).unwrap().push(lw);
         }
     }
 
-    println!("{:?}", textpairs.get(&*arguments[2]).unwrap().len());
+    println!("{:}",textpairs.get(&*arguments[2]).unwrap().len());
 }
