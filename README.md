@@ -20,6 +20,9 @@ with Different programming language.
 ### In C
 - Date 2014-11-30. Original from [maxhutch/fast_text_C](https://github.com/maxhutch/fast_text_C). Use `gcc` or `mpicc` , with `-O3` CFLAGS.
 
+### In Rust
+- Date 2015-03-16. The rust has some blinking features, such as an impressive capability of the variable's life-time and ownership management.
+
 ## Result
 On my i7-2600K PC with SSD storage, running Ubuntu 14.04.
 
@@ -28,4 +31,5 @@ On my i7-2600K PC with SSD storage, running Ubuntu 14.04.
 |Clojure| v1.6.0, openjdk-7u71-2.5.3 | 210~250 ms |
 |Julialang| v0.3.3, exclude the GC time | 210~230 ms |
 |Golang | v1.3.3 | 50~70 ms |
-|C | gcc v4.8.2, openmpi v1.6.5, `-O3` | 25~35 ms |
+|C(Using a Different algorithm) | gcc v4.8.2, openmpi v1.6.5, `-O3` | 25~35 ms |
+|Rust | rustc 1.0.0-dev, `-C opt-level=3` | 50~70 ms |
