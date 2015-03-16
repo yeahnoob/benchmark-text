@@ -43,5 +43,5 @@ fn main() {
         }
     }
 
-    println!("{:}",textpairs.get(&*arguments[2]).unwrap().len());
+    println!("{}", textpairs.get(&*arguments[2]).unwrap().len());
 }
