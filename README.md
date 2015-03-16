@@ -24,7 +24,7 @@ with Different programming language.
 - Date 2015-03-16. The rust has some blinking features, such as an impressive capability of the variable's life-time and ownership management.
 
 ## Result
-On my i7-2600K PC with SSD storage, running Ubuntu 14.04, using `perf stat -r 5 ...$THE_TEST_COMMADN...`.
+On my i7-2600K PC with SSD storage, running Ubuntu 14.04, using `perf stat -r 5 ...$THE_TEST_COMMAND...`.
 
 |Programming Language | Versions & Options | Time Cost |
 | ------- | ------- | ------- |
