@@ -1,14 +1,18 @@
+#![feature(unicode)]
 #![feature(str_words)]
 
 //! Store a file into a HashMap of Vector.
 //! Benchmark the language implemetation's I/O, Hash and Map performance.
+
+extern crate unicode;
 
 use std::io::BufReader;
 use std::io::BufRead;
 use std::fs::File;
 use std::collections::HashMap;
 use std::env;
-use std::str::StrExt;
+//use std::str::StrExt;
+use unicode::str::UnicodeStr;
 
 /// store word pairs into the HashMap of Vector `textpairs`.
 fn main() {
