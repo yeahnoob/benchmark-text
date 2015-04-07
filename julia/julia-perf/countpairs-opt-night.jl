@@ -33,5 +33,5 @@ function bench(loops::Int64, filename::String, keyword::String)
     end
 end
 
-bench(int(ARGS[1]), "wordpairs.txt", "her")
+# bench(parse(Int64, ARGS[1]), "wordpairs.txt", "her")
 None 
