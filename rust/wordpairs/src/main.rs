@@ -1,18 +1,12 @@
-#![feature(unicode)]
-#![feature(str_words)]
-
 //! Store a file into a HashMap of Vector.
 //! Benchmark the language implemetation's I/O, Hash and Map performance.
 
-extern crate unicode;
 
 use std::io::BufReader;
 use std::io::BufRead;
 use std::fs::File;
 use std::collections::HashMap;
 use std::env;
-//use std::str::StrExt;
-use unicode::str::UnicodeStr;
 
 /// store word pairs into the HashMap of Vector `textpairs`.
 fn main() {
@@ -27,7 +21,7 @@ fn main() {
 
     let mut textpairs: HashMap< &str, Vec<&str> > = HashMap::new();
     for line in alllines.iter() {
-        let twowords: Vec<&str> = line.words().collect();
+        let twowords: Vec<&str> = line.split(' ').collect();
         let fw = twowords[0];
         let lw = twowords[1];
 
